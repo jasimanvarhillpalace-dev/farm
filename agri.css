@@ -1,0 +1,232 @@
+html {
+scroll-behavior: smooth;
+}
+
+body 
+{
+background-color: #FFFEE9;
+margin: 0;
+padding: 0;
+}
+#home 
+{
+background-image: url("assets/bgimage.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+width: 100vw;
+height: 100vh;
+}
+#hamburger-nav {
+    display: none;
+  }
+/* Navigation bar */
+.navigationbar 
+{
+justify-content:flex-start;
+background-color: #4C8C2B;
+margin: 0;
+padding: 25px 30px;
+position: fixed;
+width: 100%;
+display: flex;
+top: 0;
+padding: 0.5%;
+}
+.navigationbar img
+{
+width: 4%;
+padding-left: 2%;
+margin-right: 40%;
+}
+.navigationbar ul 
+{
+list-style: none;
+display: flex;
+gap: 30%;
+margin: 0;
+padding-top: 10px;
+}
+.navigationbar ul li a 
+{
+text-decoration: none;
+color: white;
+font-weight: 500;
+font-family: "Poppins", sans-serif;
+font-size: 1.9rem;       /* increase size */
+margin: 0;
+padding: 0;
+}
+.navigationbar li a:hover
+{
+text-decoration: underline;
+text-underline-offset: 0.5rem;
+text-decoration-color:#FFFEE9; 
+}
+/* Text over background */
+.bgtext {
+width: 100%;
+text-align: center;
+padding-top: 14%;
+}
+
+.bgtext h1 {
+font-family: 'Dancing Script', cursive;
+color: #5D8C32;
+font-size: 3.5rem;
+margin: 0;
+}
+.bgtext h2 
+{
+font-family: 'Poppins', sans-serif;
+font-weight: 800;
+color: #4C8C2B;
+font-size: 5.5rem;
+margin: 0;
+}
+.bgtext button
+{
+padding-top: 10%;
+background-color: #4C8C2B;   /* green background */
+color: white;               /* text color */
+padding: 12px 25px;         /* size */
+border: none;               /* remove default border */
+border-radius: 20px;         /* rounded corners */
+font-family: "Poppins", sans-serif;
+font-size: 2rem;
+font-weight: 600;
+cursor: pointer;            /* hand cursor */
+}
+button a
+{
+text-decoration: none;
+color: #FFFEE9;
+}
+
+
+
+
+
+#products 
+{
+background-image: url("assets/bgimage.jpg");
+background-size: cover;
+background-attachment: scroll; /* safer for phones */
+display: flex;              /* arrange child divs side by side */
+overflow-x: auto;           /* enable horizontal scroll */
+scroll-snap-type: x mandatory; /* snap like slides */
+margin-top: 0;
+padding-top:0 ;
+width: 100vw;
+height: 100vh;
+}
+.productlist
+{
+  background-image:url(assets/p2.jpg);
+  text-align: center;
+}
+.productlist h1
+{
+font-family:"Poppins",sans-serif;
+font-weight: 9000;
+font-size: 2rem;
+color:#5D8C32;
+margin-top: 15%;
+margin-bottom: 0;
+}
+
+.productlist,.product1,.product2,.product3,.product4,.product5,.product6
+{
+  flex: 0 0 100%;             /* each takes full screen width */
+  height: 100%;
+  scroll-snap-align: start;   /* snap each page */
+  background-size: cover;
+  background-position: center;
+}
+.menu1,.menu2,.menu3 {
+  border: 2px solid #5D8C32;
+  margin-left: 10%;            /* centers in flexbox */
+  display: flex;                /* flex container */
+  align-items: left;          /* center content */
+  width: 25%;
+  padding: 10px;
+  border-radius: 12px;         /* fixed border radius */
+  margin-bottom: 1%;
+  background: white;            /* optional */
+  cursor: pointer;
+  text-decoration: none;
+}
+.menu2,.menu3
+{
+  margin-left: 1%;
+}
+.menu1:hover,.menu2:hover,.menu3:hover
+{
+    border: 2px solid #214103;
+
+}
+.menu1 h2,.menu2 h2,.menu3 h2
+{
+margin-top: 10%;
+margin-left: 3%;
+font-family: "Poppins",sans-serif;
+color: #5D8C32;
+}
+.align1
+{
+  display: flex;
+  margin-top: 0%;
+  margin-bottom: 2%;
+}
+
+
+#about 
+{
+background-image: url("assets/aboutlap.jpg");
+background-size: cover;
+background-attachment: scroll; /* safer for phones */
+margin-top: 0;
+padding-top:5% ;
+width: 100vw;
+height: 100vh;
+display: flex;
+
+}
+.desc
+{
+margin-left: 25%;
+margin-top: 5%;
+width: 50%;
+text-align: center;
+background-color: #b8f997;
+border-radius: 30px;
+border: 2px solid black;
+height: 60%;
+padding-left: 0%;
+}
+.abtimg img
+{
+padding-top: 30%;
+padding-left: 0%;
+}
+.desc h1
+{
+  font-family: "Poppins",sans-serif;
+  font-size: 2.5rem;
+}
+.desc p
+{
+font-family: "Poppins",sans-serif;
+font-size: 1.5rem;
+
+}
+#contact 
+{
+background-image: url("assets/contact.jpg");
+background-size: cover;
+background-attachment: scroll; /* safer for phones */
+margin-top: 0;
+padding-top:0 ;
+width: 100vw;
+height: 100vh;
+}
+
