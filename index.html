@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="agri.css">
+    <link rel="stylesheet" href="phone.css">
+</head>
+<body>
+<section id="home">  
+      <div class="navigationbar">
+    <img src="assets/logo.jpg" alt="logo">
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+        <div class="bgtext"> <!--written contents on main-->
+            <h1>organic products</h1>
+            <h2>farm fresh</h2>
+            <button><a href="#products">shop now</a></button>
+        </div>
+</section>
+    
+     
+
+  
+<section id="products">
+  <div class="productlist" >
+    <H1>MENU</H1>
+    <div class="align1"> 
+       
+  <a class="menu1" href="#" onclick="scrollToProduct(event, 'product1')">
+     <img  src="assets/grains.png"width="30%">
+     <h2>Farm fresh grain</h2>
+  </a>
+  <a class="menu2" href="#" onclick="scrollToProduct2(event, 'product2')">
+     <img src="assets/vegs.png" width="30%">
+     <h2>Farm fresh vegie</h2>
+  </a>
+  <a class="menu3" href="#" onclick="scrollToProduct2(event, 'product3')">
+     <img src="assets/seeds.png" width="30%">
+     <h2>Farm fresh seed</h2>
+  </a>
+</div>
+ <div class="align1"> 
+       
+  <a class="menu1" href="#" onclick="scrollToProduct(event, 'product4')">
+     <img src="assets/fertilizer.png" width="30%">
+     <h2>organic fertilizer</h2>
+  </a>
+  <a class="menu2" href="#" onclick="scrollToProduct2(event, 'product5')">
+     <img  src="assets/coww.png" width="30%">
+     <h2>Farm fresh milks</h2>
+  </a>
+  <a class="menu3" href="#" onclick="scrollToProduct2(event, 'product6')">
+     <img src="assets/hen.png" width="30%">
+     <h2>Farm fresh eggs</h2>
+  </a>
+</div>
+  </div>
+
+
+<div id="product1" class="product1">
+
+  <h2>Product 1</h2>
+  
+</div>
+  <div id="product2" class="product2">
+    <h2>Product 2</h2>
+  </div>
+
+  <div id="product3" class="product3">
+    <h2>Product 3</h2>
+  </div>
+
+  <div id="product4" class="product4">
+    <h2>Product 4</h2>
+  </div>
+  <div id="product5" class="product5">
+    <h2>Product 5</h2>
+  </div>
+  <div id="product6" class="product6">
+    <h2>Product 6</h2>
+  </div>
+</section>  
+<section id="about">
+<div class="desc">
+<h1>About us</h1>
+<p>
+  this website is a digital marketplace for farmers,
+   designed to connect them directly with buyers without middlemen. 
+   Farmers can showcase their fresh produce online with images, 
+   descriptions, and prices, while buyers can easily browse and purchase
+    what they need. </br><br>The platform ensures fair pricing, transparency, 
+    and trust between farmers and consumers. It also promotes organic 
+    and farm-fresh products, empowering local farmers to earn better 
+    profits while giving buyers healthier and affordable options.
+</p>
+
+</div>
+<div class="abtimg">
+  <img src="assets/farmer.png">
+</div>  
+</section>
+<section id="contact">
+
+  
+</section>
+<script>
+function scrollToProduct(event, productId) {
+  event.preventDefault(); // stop default # action
+  const el = document.getElementById(productId);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth", inline: "start" });
+  }
+}
+function scrollToProduct2(event, productId) {
+  event.preventDefault(); // stop default # action
+  const el = document.getElementById(productId);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth", inline: "start" });
+  }
+}
+</script>
+</body>
+</html>
