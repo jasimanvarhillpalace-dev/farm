@@ -148,7 +148,7 @@ text-align: center;
 background-color: #b8f997;
 border-radius: 30px;
 border: 2px solid black;
-height:70%;
+height:auto;
 padding-left: 0%;
 }
 .abtimg img
@@ -177,3 +177,4 @@ font-size: 1.3rem;
     height: 100vh;
     }
 }
+
